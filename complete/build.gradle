@@ -22,8 +22,12 @@ repositories {
     mavenLocal()
     maven { url "https://repo.grails.org/grails/core" }
 }
-
+//tag::simpleExclude[]
+configurations.all {
+    exclude module:'grails-datastore-simple'
+}
 dependencies {
+//end::simpleExclude[]
     compile "org.springframework.boot:spring-boot-starter-logging"
     compile "org.springframework.boot:spring-boot-autoconfigure"
     compile "org.grails:grails-core"

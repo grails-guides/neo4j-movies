@@ -1,4 +1,4 @@
-Firstly, this guide is built with GORM 6.1, so in order to complete the guide we must first configure Grails to use GORM 6.1.
+Firstly, this guide is built with GORM {gormVersion}, so in order to complete the guide we must first configure Grails to use GORM {gormVersion}.
 
 To do so set the `gormVersion` property in `gradle.properties` to {gormVersion}:
 
@@ -14,6 +14,16 @@ Then modify the `neo4j` dependency to also use GORM {gormVersion} in `build.grad
 .gradle.properties
 ----
 include::{sourceDir}/build.gradle[tags=gormDep]
+----
+
+In addition, GORM 6.1 no longer includes the `grails-datastore-simple` dependency so you need to exclude it from being resolved transitively in `build.gradle`:
+
+[source,groovy]
+.gradle.properties
+----
+include::{sourceDir}/build.gradle[tags=simpleExclude]
+...
+}
 ----
 
 Now configure the Neo4j connection settings to use the "movies" password you set earlier within the `grails-app/conf/application.yml` file:
