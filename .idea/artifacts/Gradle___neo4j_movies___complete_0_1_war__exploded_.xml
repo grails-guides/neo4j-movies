@@ -1,0 +1,136 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : neo4j.movies : complete-0.1.war (exploded)">
+    <output-path>$PROJECT_DIR$/complete/build/libs/exploded/complete-0.1.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/complete/build/libs/exploded/complete-0.1.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="complete_main/web/Web Gradle : complete-0.1.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="complete_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/complete/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/1.4.4.RELEASE/64f090a1c417fa559b1041daa3c0a9ded611be7f/spring-boot-starter-logging-1.4.4.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/1.4.4.RELEASE/4f30e96a8ea8fcc960c458b9da0826e66909876e/spring-boot-autoconfigure-1.4.4.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-core/3.2.7/2ae43e059342ac69d186327862d5fb10f4ebfc9f/grails-core-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-actuator/1.4.4.RELEASE/e982b07261245b97c91059eb72d7b6740560b6fe/spring-boot-starter-actuator-1.4.4.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/1.4.4.RELEASE/8c30a7786c4a8f9c66ef4f13125b4babbdbe71cb/spring-boot-starter-tomcat-1.4.4.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-url-mappings/3.2.7/f34503f4b0174471300b573bdafc80be51e0b944/grails-plugin-url-mappings-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-rest/3.2.7/beb499f076885ae873efff49ad90775707354dd4/grails-plugin-rest-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-codecs/3.2.7/159529d1ea57b1594672da85a180eb749661bd4e/grails-plugin-codecs-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-interceptors/3.2.7/b2881540fe8c7e9076c2eb99e3dc313297933e66/grails-plugin-interceptors-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-services/3.2.7/d1dadc4946797e6a77973141cab339e4aa249769/grails-plugin-services-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-datasource/3.2.7/bfdfa4f93d4e2c0643d7b6578f3b90130eb3200/grails-plugin-datasource-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-databinding/3.2.7/a0b1eaf133bd6b540c6ab5abd732dc5d96d426c1/grails-plugin-databinding-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-async/3.2.7/bc3b247d219ebd00c70342e8d4016811ce4affe5/grails-plugin-async-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-boot/3.2.7/acad5a5d16d085d439a89f855400eec1838df6fd/grails-web-boot-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-logging/3.2.7/599d5a68bb60dc185f631addc86befea1e0e8d8c/grails-logging-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/cache/3.0.3/e857268f939b4b907ce91ff4f5217cfb97abcaa7/cache-3.0.3.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/grails/plugins/neo4j/6.1.0.BUILD-SNAPSHOT/neo4j-6.1.0.BUILD-SNAPSHOT.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/views-json/1.1.5/ba2954b8a67f9578c5fedd3f472eaf24b9a983cc/views-json-1.1.5.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/views-json-templates/1.1.5/23bd3ed1cf6d6ee351ce76321e9cffbbe062bbd4/views-json-templates-1.1.5.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.9/978cd9fbb43b7abed6379d7b02de052d216e30fc/logback-classic-1.1.9.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.22/86ceac14535af5a42c8fb0d06d79b925dd3cb263/jcl-over-slf4j-1.7.22.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.22/b0429e950b3d2bc2c39c1bacafac753edbe3781c/jul-to-slf4j-1.7.22.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.22/a527c37e9ca6c3d19ba298edd4aa344ca751a203/log4j-over-slf4j-1.7.22.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.4.4.RELEASE/7d324f87e009426568116d685ca2f9fd759bf8b/spring-boot-1.4.4.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xalan/serializer/2.7.2/24247f3bb052ee068971393bdb83e04512bb1c3c/serializer-2.7.2.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy/2.4.7/groovy-2.4.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.22/a1c83373863cec7ae8d89dc1c5722d8cb6ec0309/slf4j-api-1.7.22.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/5e731d961297e5a07290bfaf3db1fbc8bbbf405a/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/com/googlecode/concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.4.2/concurrentlinkedhashmap-lru-1.4.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.7.RELEASE/54fa2db94cc7222edc90ec71354e47cd1dc07f7b/spring-core-4.3.7.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.3.7.RELEASE/b761cc783e49b5aa998ac63a721495a9f0f69f9c/spring-tx-4.3.7.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.7.RELEASE/2de9f59f3202965438f3a02057d6ad8274636044/spring-beans-4.3.7.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.7.RELEASE/34b66b0b7910122ef95ba4fff6da9238ef80a5de/spring-context-4.3.7.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-bootstrap/3.2.7/b3f4577fb965c4857d41b6f1b67d6b01ec47b239/grails-bootstrap-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-spring/3.2.7/9450b398ab304ef9e14cf9e06a86570c47c3d6ee/grails-spring-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/1.4.4.RELEASE/71348c5eb769898f5fb43778cc3b2b41cd47ed85/spring-boot-starter-1.4.4.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator/1.4.4.RELEASE/c2d617c3abe025ef8f13c677e34cdd6047d8c4bd/spring-boot-actuator-1.4.4.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.11/72761f51fc7cef3ee19d4aafc7adc605df9f611f/tomcat-embed-core-8.5.11.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.5.11/60253815b897166903bf5ec41219c5bb15333a69/tomcat-embed-el-8.5.11.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/8.5.11/dfa65e7857d46630761c0571758a56f7cbd1e9ba/tomcat-embed-websocket-8.5.11.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web/3.2.7/6cf93ee2e64483b409a53145fbbfa9bb06b3af99/grails-web-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-controllers/3.2.7/a700048d52def56418e27a971a89a9564f16f35/grails-plugin-controllers-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-validation/3.2.7/d0369a5aac0bb4725ef1b1ce481e57de8e105f19/grails-validation-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-codecs/3.2.7/3722e29bf7b1363650f6305b33cf4048aa38b70b/grails-codecs-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-converters/3.2.7/b0d77638476c2312b526148d9347e682c6b9eec/grails-plugin-converters-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-encoder/3.2.7/362db45d49f9c294d4578d1ba12bd07a426a60d0/grails-encoder-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-events/3.2.7/72e7702ab601b68930afa1925998fa3b65963677/grails-plugin-events-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-logging-log4j/8.5.2/53bdd1eebc7393713261d178ac096a742423f940/tomcat-embed-logging-log4j-8.5.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.3.7.RELEASE/305c8db0f9552948aec093528cd01393cc98a646/spring-jdbc-4.3.7.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-sql/2.4.7/eb13f8aadd7b7c2c920ef52dfda74155e7803255/groovy-sql-2.4.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-jdbc/8.5.11/4d156969f12963b5f9232e9fe68ab710c3318ad5/tomcat-jdbc-8.5.11.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-common/3.2.7/a8b00d5586d344398fdeb37babd5b4d4510e1077/grails-web-common-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.20.0-GA/a9cbcdfb7e9f86fbc74d3afae65f2248bfbf82a0/javassist-3.20.0-GA.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/grails/grails-datastore-web/6.1.0.BUILD-SNAPSHOT/grails-datastore-web-6.1.0.BUILD-SNAPSHOT.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/grails/grails-datastore-gorm-support/6.1.0.BUILD-SNAPSHOT/grails-datastore-gorm-support-6.1.0.BUILD-SNAPSHOT.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/grails/grails-datastore-gorm-neo4j/6.1.0.BUILD-SNAPSHOT/grails-datastore-gorm-neo4j-6.1.0.BUILD-SNAPSHOT.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/views-core/1.1.5/3aaab1c6021e194ea5d11cd0035ec4223a50833d/views-core-1.1.5.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.9/e05d0cb67220937c32d7b4e5a47f967605376f63/logback-core-1.1.9.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.3.7.RELEASE/3f243d685e4a8a78a0c291445c6d85560ec4d339/spring-aop-4.3.7.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.3.7.RELEASE/5257b6486e43d8c05674323fea5b415d4da72f38/spring-expression-4.3.7.RELEASE.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-xml/2.4.7/groovy-xml-2.4.7.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-templates/2.4.7/groovy-templates-2.4.7.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.6/c43de61f74ecc61322ef8f402837ba65b0aa2bf4/jackson-databind-2.8.6.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/4.3.7.RELEASE/fa0671826a42f6bac5145ffbc78075493dcb4e8b/spring-aspects-4.3.7.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.9/87372d9e2323313bec24b09a325bfea8ae0eb867/aspectjrt-1.8.9.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.8.9/db28774f477f07220eac18d5ec9c4e01f48589d7/aspectjweaver-1.8.9.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-gsp/3.2.7/d53ec9fa268d667b7172f3d2c600e944dfac9a82/grails-web-gsp-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-databinding/3.2.7/afec7af00d3094a5e5eb677b99cddf4571f00786/grails-web-databinding-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-url-mappings/3.2.7/34631037270490b691589985bfaea6385a18583f/grails-web-url-mappings-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-jsp/3.2.7/67808caa5c00cd7130b0f7a63312beae72ccdd49/grails-web-jsp-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-mvc/3.2.7/5243cb447c0d221adaa50919cc0efb0a29f7c0f3/grails-web-mvc-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-sitemesh/3.2.7/49ef60a164b0dcd4f91035bff598ac3b36e39569/grails-web-sitemesh-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-i18n/3.2.7/e7bbb0b4ab0c3d458568fea65238bdc70fe95e37/grails-plugin-i18n-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-async/3.2.7/7f50c7a3e4b4779b2de6d5254e7203488ca3b651/grails-async-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-mimetypes/3.2.7/d0eb839e89899138e49b726b15799449ff56fd38/grails-plugin-mimetypes-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-validation/3.2.7/7aab52c0fc1b16267da24f5d6f8c877cda5d8fc3/grails-plugin-validation-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-domain-class/3.2.7/d5809a123b64aa6625db4780eab73f7850f0d24/grails-plugin-domain-class-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-validator/commons-validator/1.5.1/86d05a46e8f064b300657f751b5a98c62807e2a0/commons-validator-1.5.1.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.10/commons-codec-1.10.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-json/2.4.7/groovy-json-2.4.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.7.RELEASE/7b69fc68cdb74c1c92f72905af6995696fcb56aa/spring-web-4.3.7.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor.spring/reactor-spring-context/2.0.7.RELEASE/ca4285a0a0ab9d1f39953c086bfcfc5883c06c32/reactor-spring-context-2.0.7.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-bus/2.0.8.RELEASE/dea2861087164495584ac4a01835e665dc0a32a2/reactor-bus-2.0.8.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-juli/8.5.11/fa0b261ce002175b65ebb6ae8eb4345cb7e57da3/tomcat-juli-8.5.11.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-databinding/3.2.7/90a50fff11d3c20d987c474444d898aad3044a5a/grails-databinding-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-gsp/3.2.7/6a7047630e5b45a478b352dd91b6dc7eabc61aae/grails-gsp-3.2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.3.7.RELEASE/d25b11a605589f176e3ecf1dcae62a991a18b377/spring-webmvc-4.3.7.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/4.3.7.RELEASE/7e48f8daf207c06cf0229889a456073832359742/spring-context-support-4.3.7.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/grails/grails-datastore-core/6.1.0.BUILD-SNAPSHOT/grails-datastore-core-6.1.0.BUILD-SNAPSHOT.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/grails/grails-datastore-gorm/6.1.0.BUILD-SNAPSHOT/grails-datastore-gorm-6.1.0.BUILD-SNAPSHOT.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j.driver/neo4j-java-driver/1.1.2/d8aefa394992b858d5dffbd8fbb268ec6639b73d/neo4j-java-driver-1.1.2.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/grails/grails-datastore-gorm-validation/6.1.0.BUILD-SNAPSHOT/grails-datastore-gorm-validation-6.1.0.BUILD-SNAPSHOT.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.6/9577018f9ce3636a2e1cb0a0c7fe915e5098ded5/jackson-annotations-2.8.6.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.6/2ef7b1cc34de149600f5e75bc2d5bf40de894e60/jackson-core-2.8.6.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-taglib/3.2.7/21c56d5f0109b0bb660b8c27e7de47f3593d4d37/grails-web-taglib-3.2.7.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/opensymphony/sitemesh/2.4/sitemesh-2.4.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.gpars/gpars/1.2.1/c3ea0fbcd67a163bd5e3a3efdaa3428262d0d437/gpars-1.2.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/2.0.8.RELEASE/c39f1a80fcc6e92a527d162186fb57833b1dfc3b/reactor-core-2.0.8.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-stream/2.0.8.RELEASE/9aa8be580e368601021d3953bcf8ed2b3462d26a/reactor-stream-2.0.8.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-datastore-simple/6.1.0.BUILD-SNAPSHOT/189474d719b010eb2d6f39a4682897412fe97d28/grails-datastore-simple-6.1.0.BUILD-SNAPSHOT.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor.spring/reactor-spring-core/2.0.7.RELEASE/b1045de1d670cb1b5885221954e8338bf3938ff5/reactor-spring-core-2.0.7.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.goldmansachs/gs-collections/5.1.0/7114c5349c816ea645b1ea3ffcc21fa073cbabc/gs-collections-5.1.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-taglib/3.2.7/f8afcb4757d435636fc6b027bf330d98181b9f6d/grails-taglib-3.2.7.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/javax/transaction/jta/1.1/jta-1.1.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/codehaus/jsr166-mirror/jsr166y/1.7.0/jsr166y-1.7.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.0/14b8c877d98005ba3941c9257cfe09f6ed0e0d74/reactive-streams-1.0.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.goldmansachs/gs-collections-api/5.1.0/ea605cdf64cab5fc7b48c99f061d4c8db05b6ff1/gs-collections-api-5.1.0.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

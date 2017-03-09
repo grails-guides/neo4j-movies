@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.grails:grails-web-gsp:3.2.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-gsp/3.2.7/d53ec9fa268d667b7172f3d2c600e944dfac9a82/grails-web-gsp-3.2.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-gsp/3.2.7/12ae02eb0f2013e9abd5cf86edb8026df0e74524/grails-web-gsp-3.2.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

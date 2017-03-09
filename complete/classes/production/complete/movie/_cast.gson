@@ -1,0 +1,10 @@
+import groovy.transform.Field
+import neo4j.movies.CastMember
+
+@Field CastMember cast
+
+json {
+    job cast.type.split("_")[0].toLowerCase()
+    name cast.from.name
+    role cast.roles
+}

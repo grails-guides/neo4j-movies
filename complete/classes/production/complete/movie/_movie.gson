@@ -1,0 +1,10 @@
+import neo4j.movies.Movie
+
+model {
+	Movie movie
+}
+
+json {
+    cast tmpl.cast( movie.cast )
+    title movie.title
+}

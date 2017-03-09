@@ -1,0 +1,17 @@
+gettingStarted:
+  title: Getting Started
+  requirements: What you will need
+  howto: How to complete the guide
+writingTheApp:
+  title: Writing the Application
+  setupData: Populating the Data Model
+  configuration: Configure GORM for Neo4j
+  domainModel: Define the GORM Domain Model
+  endpoints:
+    title: Implementing the REST Endpoints
+    byTitleEndpoint: The Find By Title Endpoint
+    searchEndpoint: The Search Endpoint
+    graphEndpoint: The D3 Graph Endpoint
+  ui: Add the Neo4j Movies UI
+runningTheApp:
+  title: Running the Application

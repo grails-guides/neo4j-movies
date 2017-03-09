@@ -1,0 +1,8 @@
+import neo4j.movies.Movie
+
+model {
+	Iterable<Movie> movieList
+}
+
+json tmpl.movie(movieList ?: [])
+

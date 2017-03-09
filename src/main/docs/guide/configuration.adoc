@@ -1,0 +1,26 @@
+Firstly, this guide is built with GORM 6.1, so in order to complete the guide we must first configure Grails to use GORM 6.1.
+
+To do set the `gormVersion` property in `gradle.properties` to {gormVersion}:
+
+[source,properties]
+.gradle.properties
+----
+include::{sourceDir}/gradle.properties[]
+----
+
+Then modify the `neo4j` dependency to also use GORM {gormVersion} in `build.gradle`:
+
+[source,groovy]
+.gradle.properties
+----
+include::{sourceDir}/build.gradle[tags=gormDep]
+----
+
+Now configure the Neo4j connection settings to use the "movies" password you set earlier within the `grails-app/conf/application.yml` file:
+
+
+[source,yaml]
+.grails-app/conf/application.yml
+----
+include::{sourceDir}/grails-app/conf/application.yml[tags=neo4jConfig]
+----
