@@ -12,7 +12,7 @@ class MovieServiceSpec extends Neo4jSpec {
 
     void setup() {
         Neo4jDatastore neo4jDatastore = this.neo4jDatastore
-        service = neo4jDatastore.getService(MovieService)
+        service = neo4jDatastore.services.find { it instanceof MovieService }
     }
 
     void "Test search movies"() {
