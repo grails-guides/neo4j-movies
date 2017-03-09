@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: org.codehaus.groovy:groovy-xml:2.4.7">
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-xml/2.4.7/groovy-xml-2.4.7.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
