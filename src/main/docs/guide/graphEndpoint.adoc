@@ -1,4 +1,4 @@
-The final endpoint to implement is the `graph` endpoint. This endpoint outputs database about the graph in a JSON format that can be interpreted by the https://d3js.org[D3 JavaScript Library] used by the example application's UI.
+The final endpoint to implement is the `graph` endpoint. This endpoint outputs data about the graph in a JSON format that can be interpreted by the https://d3js.org[D3 JavaScript Library] used by the example application's UI.
 
 
 The first step is to write a query for the data that we need. The nice thing about GORM for Neo4j is it has powerful integration with the Cypher query language.

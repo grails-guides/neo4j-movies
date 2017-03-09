@@ -31,7 +31,7 @@ Click on the code to populate it into Neo4j browser editor:
 
 image::neo4j-clickcode.png[]
 
-This will place necessary https://neo4j.com/developer/cypher-query-language/[Cypher] statements in the Neo4j browser editor that will populate the example database. You can then press the "Play" button to run the code and in the window below will appear a Graph visualization of the database model:
+This will place the necessary https://neo4j.com/developer/cypher-query-language/[Cypher] statements into the Neo4j browser editor that will populate the example database. You can then press the "Play" button to run the code and in the window below will appear a Graph visualization of the database model:
 
 image::neo4j-runcode.png[]
 

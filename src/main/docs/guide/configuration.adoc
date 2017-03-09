@@ -1,6 +1,6 @@
 Firstly, this guide is built with GORM 6.1, so in order to complete the guide we must first configure Grails to use GORM 6.1.
 
-To do set the `gormVersion` property in `gradle.properties` to {gormVersion}:
+To do so set the `gormVersion` property in `gradle.properties` to {gormVersion}:
 
 [source,properties]
 .gradle.properties

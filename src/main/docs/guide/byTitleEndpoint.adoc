@@ -36,7 +36,7 @@ Now let's implement the controller action that will invoke this method. First au
 include::{sourceDir}/grails-app/controllers/neo4j/movies/MovieController.groovy[tags=service, indent=0]
 ----
 
-This using Spring to inject the dependency and make the service implementation available. Next add an action called `show` that invokes the `find` method and responds with the result:
+This uses Spring to inject the dependency and make the service implementation available. Next add an action called `show` that invokes the `find` method and responds with the result:
 
 [source,groovy]
 .grails-app/controllers/neo4j/movies/MovieController.groovy

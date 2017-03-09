@@ -42,7 +42,7 @@ abstract class MovieService {
      */
     //tag::graph[]
     @Cypher("""MATCH ${Movie m}<-[:ACTED_IN]-${Person p}
-               RETURN $m.title as movie, collect($p.name) as cast 
+               RETURN ${m.title} as movie, collect(${p.name}) as cast 
                LIMIT $limit""")
     protected abstract StatementResult findMovieTitlesAndCast(int limit)
     //end::graph[]
