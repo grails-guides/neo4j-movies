@@ -28,7 +28,7 @@ include::{sourceDir}/grails-app/services/neo4j/movies/MovieService.groovy[tags=f
 
 The method will be automatically implemented for you by GORM, but note that we use the `@Join` annotation to indicate we want to fetch the `cast` association using the same query.
 
-Now let's implement the controller action that will invoke this method. First autowire the service into the `MovieController` class:
+Now let's implement the controller action that will invoke this method. First inject the service into the `MovieController` class:
 
 [source,groovy]
 .grails-app/controllers/neo4j/movies/MovieController.groovy
