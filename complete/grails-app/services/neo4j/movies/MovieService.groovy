@@ -1,6 +1,6 @@
 package neo4j.movies
 
-import grails.gorm.services.Cypher
+import grails.neo4j.services.Cypher
 import org.neo4j.driver.v1.Record
 import org.neo4j.driver.v1.StatementResult
 import grails.gorm.services.Join
