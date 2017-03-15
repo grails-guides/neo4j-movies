@@ -45,7 +45,7 @@ dependencies {
     compile "org.grails:grails-logging"
     compile "org.grails.plugins:cache"
     //tag::gormDep[]
-    compile "org.grails.plugins:neo4j:$gormVersion"
+    compile "org.grails.plugins:neo4j:${gormVersion - '.RELEASE'}"
     //end::gormDep[]
     compile "org.grails.plugins:views-json"
     compile "org.grails.plugins:views-json-templates"
