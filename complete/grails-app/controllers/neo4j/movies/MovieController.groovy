@@ -1,14 +1,12 @@
 package neo4j.movies
 
-import org.springframework.beans.factory.annotation.Autowired
-
 //tag::controller[]
 class MovieController {
 	static responseFormats = ['json', 'xml']
 //end::controller[]
 
     //tag::service[]
-    @Autowired MovieService movieService
+    MovieService movieService
     //end::service[]
 
     //tag::show[]
