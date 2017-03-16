@@ -21,7 +21,7 @@ The next step is to convert the result of this query into a format expected by D
 include::{sourceDir}/grails-app/services/neo4j/movies/MovieService.groovy[tags=d3format, indent=0]
 ----
 
-The `graph` method takes the Neo4j `StatementResult` and converts it to an appropriate format. Finally we can add a method to `MovieController` to return the required data:
+The `graph` method takes the Neo4j results and converts it to an appropriate format. Finally we can add a method to `MovieController` to return the required data:
 
 [source,groovy]
 .grails-app/controllers/neo4j/movies/MovieController.groovy

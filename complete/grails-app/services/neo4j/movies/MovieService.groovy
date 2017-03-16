@@ -1,8 +1,7 @@
 package neo4j.movies
 
+import grails.gorm.transactions.ReadOnly
 import grails.neo4j.services.Cypher
-import org.neo4j.driver.v1.Record
-import org.neo4j.driver.v1.StatementResult
 import grails.gorm.services.Join
 
 //tag::service[]
@@ -44,24 +43,25 @@ abstract class MovieService {
     @Cypher("""MATCH ${Movie m}<-[:ACTED_IN]-${Person p}
                RETURN ${m.title} as movie, collect(${p.name}) as cast 
                LIMIT $limit""")
-    protected abstract StatementResult findMovieTitlesAndCast(int limit)
+    protected abstract List<Map<String, Iterable<String>>> findMovieTitlesAndCast(int limit)
     //end::graph[]
 
     //tag::d3format[]
+    @ReadOnly
     Map<String, Object> graph(int limit = 100) {
         return toD3Format(findMovieTitlesAndCast(limit))
     }
 
-    private Map<String, Object> toD3Format(StatementResult result) {
+    private Map<String, Object> toD3Format(List<Map<String, Iterable<String>>> result) {
         List<Map<String,String>> nodes = []
         List<Map<String,Object>> rels= []
         int i=0
-        for(Record row in result) {
-            nodes << [title: row.get("movie").asString(), label:"movie"]
+        for(entry in result) {
+            nodes << [title: entry.movie, label:"movie"]
             int target=i
             i++
-            for (Object name : (Collection) row.get("cast").asList()) {
-                def actor = [title: name.toString(), label:"actor"]
+            for (String name : (Iterable<String>) entry.cast) {
+                def actor = [title: name, label:"actor"]
                 int source = nodes.indexOf(actor)
                 if (source == -1) {
                     nodes << actor
