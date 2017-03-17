@@ -26,7 +26,7 @@ abstract class MovieService {
         List<Movie> results
         if(q) {
             results = Movie.where {
-                title ==~ ~/(?i).*${q}.*/  // <2>
+                title ==~ "%${q}%"  // <2>
             }.list(max:limit)
         }
         else {
