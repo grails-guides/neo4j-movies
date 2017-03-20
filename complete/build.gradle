@@ -23,9 +23,6 @@ repositories {
     maven { url "https://repo.grails.org/grails/core" }
 }
 //tag::simpleExclude[]
-configurations.all {
-    exclude module:'grails-datastore-simple'
-}
 dependencies {
 //end::simpleExclude[]
     compile "org.springframework.boot:spring-boot-starter-logging"
@@ -45,7 +42,7 @@ dependencies {
     compile "org.grails:grails-logging"
     compile "org.grails.plugins:cache"
     //tag::gormDep[]
-    compile "org.grails.plugins:neo4j:${gormVersion - '.RELEASE'}"
+    compile "org.grails.plugins:neo4j"
     //end::gormDep[]
     compile "org.grails.plugins:views-json"
     compile "org.grails.plugins:views-json-templates"
@@ -63,4 +60,10 @@ dependencies {
 bootRun {
     jvmArgs = ['-Dspring.output.ansi.enabled=always']
     addResources = true
+}
+
+tasks.withType(JavaForkOptions) { task ->
+    task.minHeapSize = '128m'
+    task.maxHeapSize = '1G'
+    task.jvmArgs = ['-Xms128M', '-Xmx1G']
 }
