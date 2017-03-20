@@ -62,8 +62,3 @@ bootRun {
     addResources = true
 }
 
-tasks.withType(JavaForkOptions) { task ->
-    task.minHeapSize = '128m'
-    task.maxHeapSize = '1G'
-    task.jvmArgs = ['-Xms128M', '-Xmx1G']
-}
