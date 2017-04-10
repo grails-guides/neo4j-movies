@@ -4,4 +4,4 @@ This example application demonstrates how to build a Graph application with Grai
 
 The completed example source code can be find in the `complete` directory.
 
-The published guide can be found on the [Grails Guides website](http://guides.grails.org/neo4j-movies/guide/index.html).
+The published guide can be found on the [Grails Guides website](http://guides.grails.org/neo4j-movies/guide/index.html)
