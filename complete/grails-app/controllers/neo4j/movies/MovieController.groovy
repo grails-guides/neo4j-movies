@@ -1,29 +1,32 @@
 package neo4j.movies
 
+import groovy.transform.CompileStatic
+
 //tag::controller[]
+@CompileStatic
 class MovieController {
-	static responseFormats = ['json', 'xml']
+    static responseFormats = ['json', 'xml']
 //end::controller[]
 
-    //tag::service[]
+    // tag::service[]
     MovieService movieService
     //end::service[]
 
-    //tag::show[]
+    // tag::show[]
     def show(String title) {
         respond movieService.find(title)
     }
     //end::show[]
 
-    //tag::search[]
+    // tag::search[]
     def search(String q) {
         respond movieService.search(q)
     }
     //end::search[]
 
-    //tag::graph[]
+    // tag::graph[]
     def graph() {
-        respond movieService.graph(params.int("limit", 100))
+        respond movieService.graph(params.int('limit', 100))
     }
     //end::graph[]
 }

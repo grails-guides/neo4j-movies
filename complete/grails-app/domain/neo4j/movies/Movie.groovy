@@ -1,8 +1,11 @@
 package neo4j.movies
 
+import grails.compiler.GrailsCompileStatic
+
 /**
  * Models a movie node in the graph database
  */
+@GrailsCompileStatic
 class Movie {
     String title
     String tagline
