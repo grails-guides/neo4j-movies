@@ -6,7 +6,11 @@ import grails.gorm.services.Join
 
 //tag::service[]
 import grails.gorm.services.Service
+import groovy.transform.CompileDynamic
+import groovy.transform.CompileStatic
 
+@SuppressWarnings(['UnusedVariable', 'SpaceAfterOpeningBrace', 'SpaceBeforeClosingBrace'])
+@CompileStatic
 @Service(Movie)
 abstract class MovieService {
 //end::service[]
@@ -24,7 +28,7 @@ abstract class MovieService {
     //tag::search[]
     List<Movie> search(String q, int limit = 100) { // <1>
         List<Movie> results
-        if(q) {
+        if (q) {
             results = Movie.where {
                 title ==~ "%${q}%"  // <2>
             }.list(max:limit)
@@ -32,7 +36,7 @@ abstract class MovieService {
         else {
             results = [] // <3>
         }
-        return results
+        results
     }
     //end::search[]
 
@@ -41,7 +45,7 @@ abstract class MovieService {
      */
     //tag::graph[]
     @Cypher("""MATCH ${Movie m}<-[:ACTED_IN]-${Person p}
-               RETURN ${m.title} as movie, collect(${p.name}) as cast 
+               RETURN ${m.title} as movie, collect(${p.name}) as cast
                LIMIT $limit""")
     protected abstract List<Map<String, Iterable<String>>> findMovieTitlesAndCast(int limit)
     //end::graph[]
@@ -49,28 +53,30 @@ abstract class MovieService {
     //tag::d3format[]
     @ReadOnly
     Map<String, Object> graph(int limit = 100) {
-        return toD3Format(findMovieTitlesAndCast(limit))
+        toD3Format(findMovieTitlesAndCast(limit))
     }
 
-    private Map<String, Object> toD3Format(List<Map<String, Iterable<String>>> result) {
+    @SuppressWarnings('NestedForLoop')
+    @CompileDynamic
+    private static Map<String, Object> toD3Format(List<Map<String, Iterable<String>>> result) {
         List<Map<String,String>> nodes = []
         List<Map<String,Object>> rels= []
-        int i=0
-        for(entry in result) {
-            nodes << [title: entry.movie, label:"movie"]
+        int i = 0
+        for (entry in result) {
+            nodes << [title: entry.movie, label: 'movie']
             int target=i
             i++
             for (String name : (Iterable<String>) entry.cast) {
-                def actor = [title: name, label:"actor"]
+                def actor = [title: name, label: 'actor']
                 int source = nodes.indexOf(actor)
                 if (source == -1) {
                     nodes << actor
                     source = i++
                 }
-                rels << [source:source, target: target]
+                rels << [source: source, target: target]
             }
         }
-        return [nodes: nodes, links: rels]
+        [nodes: nodes, links: rels]
     }
     //end::d3format[]
 }

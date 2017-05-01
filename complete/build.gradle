@@ -17,6 +17,7 @@ apply plugin:"idea"
 apply plugin:"war"
 apply plugin:"org.grails.grails-web"
 apply plugin:"org.grails.plugins.views-json"
+apply plugin: 'codenarc'
 
 repositories {
     mavenLocal()
@@ -51,8 +52,9 @@ dependencies {
     testCompile "org.grails:grails-plugin-testing"
     testCompile "org.grails.plugins:geb"
     testCompile "org.grails:grails-datastore-rest-client"
-
+    //tag::neo4JHarnessDep[]
     testRuntime "org.neo4j.test:neo4j-harness:$neo4jVersion"
+    //end::neo4JHarnessDep[]
     testRuntime "org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1"
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
 }
@@ -62,3 +64,8 @@ bootRun {
     addResources = true
 }
 
+codenarc {
+    toolVersion = '0.27.0'
+    configFile = file("${project.projectDir}/config/codenarc/rules.groovy")
+    reportFormat = 'html'
+}

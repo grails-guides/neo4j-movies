@@ -9,29 +9,30 @@ import spock.lang.Specification
 /**
  * See the API for {@link grails.test.mixin.services.ServiceUnitTestMixin} for usage instructions
  */
+@SuppressWarnings(['MethodName', 'DuplicateNumberLiteral'])
 class MovieServiceSpec extends Specification {
 
-    @Shared @AutoCleanup Neo4jDatastore datastore = new Neo4jDatastore(getClass().getPackage())
+    @Shared @AutoCleanup Neo4jDatastore datastore = new Neo4jDatastore(getClass().package)
     @Shared MovieService service = datastore.getService(MovieService)
 
     @Rollback
-    void "Test search movies"() {
+    void 'Test search movies'() {
         given:
-        new Movie(title: "The Matrix", tagline: "Free your mind", released: 1999).save(flush:true)
+        new Movie(title: 'The Matrix', tagline: 'Free your mind', released: 1999).save(flush:true)
 
-        expect:"to find results"
-        service.search("Matr")
-        service.search("The")
-        !service.search("The Wrestler")
+        expect: 'to find results'
+        service.search('Matr')
+        service.search('The')
+        !service.search('The Wrestler')
     }
 
     @Rollback
-    void "Test find movie by title"() {
+    void 'Test find movie by title'() {
         given:
-        new Movie(title: "The Matrix", tagline: "Free your mind", released: 1999).save(flush:true)
+        new Movie(title: 'The Matrix', tagline: 'Free your mind', released: 1999).save(flush:true)
 
-        expect:"The find movies by title"
-        service.find("The Matrix")
-        !service.find("The Wrestler")
+        expect: 'The find movies by title'
+        service.find('The Matrix')
+        !service.find('The Wrestler')
     }
 }
