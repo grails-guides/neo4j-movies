@@ -35,7 +35,7 @@ include::{sourceDir}/grails-app/domain/neo4j/movies/Movie.groovy[]
 
 A `Movie` has a `title`, a `tagline`, release `year` and also features an association to `CastMember`.
 
-The `CastMember` domain class is going to model the relationship between a `Person` and a `Movie`. To do that we are going to use the `grails.neo4j.Relationship` trait:
+The `CastMember` domain class is going to model the relationship between a `Person` and a `Movie`. To do that we are going to use the `grails.neo4j.Relationship` trait, which allows us to map a domain class to a Neo4j relationship instead of a node:
 
 [source,groovy]
 .grails-app/domain/neo4j/movies/CastMember.groovy

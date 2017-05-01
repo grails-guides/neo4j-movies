@@ -67,8 +67,6 @@ grails:
 grails:
     neo4j:
         url: bolt://localhost
-        options:
-            cache_type: soft
         username: "neo4j"
         password: "movies"
 # end::neo4jConfig[]

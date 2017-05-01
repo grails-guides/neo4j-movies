@@ -2,7 +2,7 @@ The final piece of the puzzle is to include the official Neo4j example applicati
 
 The `index.html` page can be found in the `complete/src/main/webapp` directory of this tutorial, simply copy it into your application's `src/main/webapp` directory.
 
-Add the next grails resources configuration pattern: 
+Add the grails resources configuration pattern below to the `grails-app/conf/application.yml` file:
 
 
 [source,yaml]
@@ -18,7 +18,7 @@ Modify `grails-app/controllers/neo4j/movies/UrlMappings.groovy` to map the root 
 [source,groovy]
 .grails-app/controllers/neo4j/movies/UrlMappings.groovy
 ----
-include::{sourceDir}/grails-app/controllers/neo4j/movies/UrlMappings.groovy[tags=index]
+include::{sourceDir}/grails-app/controllers/neo4j/movies/UrlMappings.groovy[tags=index, indent=0]
 ----
 
 

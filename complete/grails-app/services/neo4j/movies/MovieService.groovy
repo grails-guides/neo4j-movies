@@ -1,16 +1,12 @@
 package neo4j.movies
 
-import groovy.transform.CompileDynamic
-import org.neo4j.driver.v1.Record
-import org.neo4j.driver.v1.StatementResult
+import grails.gorm.transactions.ReadOnly
+import grails.neo4j.services.Cypher
 import grails.gorm.services.Join
-import grails.gorm.services.Cypher
-import groovy.transform.CompileStatic
+
+//tag::service[]
 import grails.gorm.services.Service
 
-@SuppressWarnings(['UnusedVariable', 'SpaceAfterOpeningBrace', 'SpaceBeforeClosingBrace'])
-//tag::service[]
-@CompileStatic
 @Service(Movie)
 abstract class MovieService {
 //end::service[]
@@ -28,15 +24,15 @@ abstract class MovieService {
     //tag::search[]
     List<Movie> search(String q, int limit = 100) { // <1>
         List<Movie> results
-        if (q) {
+        if(q) {
             results = Movie.where {
-                title ==~ ~/(?i).*${q}.*/  // <2>
+                title ==~ "%${q}%"  // <2>
             }.list(max:limit)
         }
         else {
             results = [] // <3>
         }
-        results
+        return results
     }
     //end::search[]
 
@@ -45,28 +41,27 @@ abstract class MovieService {
      */
     //tag::graph[]
     @Cypher("""MATCH ${Movie m}<-[:ACTED_IN]-${Person p}
-               RETURN ${m.title} as movie, collect(${p.name}) as cast
+               RETURN ${m.title} as movie, collect(${p.name}) as cast 
                LIMIT $limit""")
-    protected abstract StatementResult findMovieTitlesAndCast(int limit)
+    protected abstract List<Map<String, Iterable<String>>> findMovieTitlesAndCast(int limit)
     //end::graph[]
 
     //tag::d3format[]
+    @ReadOnly
     Map<String, Object> graph(int limit = 100) {
-        toD3Format(findMovieTitlesAndCast(limit))
+        return toD3Format(findMovieTitlesAndCast(limit))
     }
 
-    @CompileDynamic
-    @SuppressWarnings('NestedForLoop')
-    private Map<String, Object> toD3Format(StatementResult result) {
+    private Map<String, Object> toD3Format(List<Map<String, Iterable<String>>> result) {
         List<Map<String,String>> nodes = []
         List<Map<String,Object>> rels= []
-        int i = 0
-        for (Record row in result) {
-            nodes << [title: row.get('movie').asString(), label: 'movie']
+        int i=0
+        for(entry in result) {
+            nodes << [title: entry.movie, label:"movie"]
             int target=i
             i++
-            for (Object name : (Collection) row.get('cast').asList()) {
-                def actor = [title: name.toString(), label: 'actor']
+            for (String name : (Iterable<String>) entry.cast) {
+                def actor = [title: name, label:"actor"]
                 int source = nodes.indexOf(actor)
                 if (source == -1) {
                     nodes << actor
@@ -75,7 +70,7 @@ abstract class MovieService {
                 rels << [source:source, target: target]
             }
         }
-        [nodes: nodes, links: rels]
+        return [nodes: nodes, links: rels]
     }
     //end::d3format[]
 }

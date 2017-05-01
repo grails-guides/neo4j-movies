@@ -17,16 +17,6 @@ include::{sourceDir}/gradle.properties[]
 include::{sourceDir}/build.gradle[tags=gormDep]
 ----
 
-In addition, GORM 6.1 no longer includes the `grails-datastore-simple` dependency so you need to exclude it from being resolved transitively in `build.gradle`:
-
-[source,groovy]
-.gradle.properties
-----
-include::{sourceDir}/build.gradle[tags=simpleExclude]
-...
-}
-----
-
 Now modify the already existing neo4j configuration block within the `grails-app/conf/application.yml` file. Configure the Neo4j connection settings to use the "movies" password you set earlier:
 
 [source,yaml]
