@@ -2,17 +2,12 @@ package neo4j.movies
 
 import grails.gorm.transactions.Rollback
 import grails.test.neo4j.Neo4jSpec
-import spock.lang.Shared
+import grails.testing.services.ServiceUnitTest
+import spock.lang.Ignore
 
-@SuppressWarnings(['MethodName', 'DuplicateNumberLiteral'])
-class MovieServiceSpec extends Neo4jSpec {
-
-    @Shared
-    MovieService service
-
-    def setupSpec() {
-        service = neo4jDatastore.getService(MovieService)
-    }
+@Ignore
+@SuppressWarnings(['MethodName', 'DuplicateNumberLiteral', 'UnnecessaryGetter', 'TrailingWhitespace'])
+class MovieServiceSpec extends Neo4jSpec implements ServiceUnitTest<MovieService>  {
 
     protected List<Class> getDomainClasses() { [Movie] }
 
