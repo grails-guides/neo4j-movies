@@ -7,7 +7,7 @@ import spock.lang.Ignore
 import spock.lang.Shared
 import spock.lang.Specification
 
-@Ignore
+// @Ignore
 @SuppressWarnings(['MethodName', 'DuplicateNumberLiteral', 'UnnecessaryGetter', 'TrailingWhitespace'])
 class MovieServiceSpec extends Specification {
 

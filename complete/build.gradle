@@ -23,7 +23,9 @@ repositories {
     mavenLocal()
     maven { url "https://repo.grails.org/grails/core" }
 }
+
 //tag::simpleExclude[]
+ext['jetty.version'] = '9.2.9.v20150224'
 dependencies {
 //end::simpleExclude[]
     compile "org.springframework.boot:spring-boot-starter-logging"
