@@ -1,19 +1,21 @@
 package neo4j.movies
 
 import grails.gorm.transactions.Rollback
-import org.grails.datastore.gorm.neo4j.Neo4jDatastore
-import spock.lang.AutoCleanup
-import spock.lang.Ignore
+import grails.test.neo4j.Neo4jSpec
+import grails.testing.spock.OnceBefore
 import spock.lang.Shared
-import spock.lang.Specification
 
-// @Ignore
 @SuppressWarnings(['MethodName', 'DuplicateNumberLiteral', 'UnnecessaryGetter', 'TrailingWhitespace'])
-class MovieServiceSpec extends Specification {
+class MovieServiceSpec extends Neo4jSpec {
 
-    @Shared @AutoCleanup Neo4jDatastore datastore = new Neo4jDatastore(getClass().getPackage())
+    protected List<Class> getDomainClasses() { [Movie] }
 
-    MovieService service =  datastore.getService(MovieService)
+    @Shared MovieService service
+
+    @OnceBefore
+    def serviceSetup() {
+        service = neo4jDatastore.getService(MovieService)
+    }
 
     @Rollback
     void 'Test search movies'() {
