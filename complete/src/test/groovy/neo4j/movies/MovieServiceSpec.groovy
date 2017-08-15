@@ -3,11 +3,11 @@ package neo4j.movies
 import grails.gorm.transactions.Rollback
 import org.grails.datastore.gorm.neo4j.Neo4jDatastore
 import spock.lang.AutoCleanup
+import spock.lang.Ignore
 import spock.lang.Shared
 import spock.lang.Specification
-import spock.lang.Ignored
 
-@Ignored
+@Ignore
 @SuppressWarnings(['MethodName', 'DuplicateNumberLiteral', 'UnnecessaryGetter', 'TrailingWhitespace'])
 class MovieServiceSpec extends Specification {
 
