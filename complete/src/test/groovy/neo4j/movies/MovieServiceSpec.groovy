@@ -6,6 +6,7 @@ import grails.testing.spock.OnceBefore
 import spock.lang.Shared
 
 @SuppressWarnings(['MethodName', 'DuplicateNumberLiteral', 'UnnecessaryGetter', 'TrailingWhitespace'])
+@IgnoreIf( { System.getenv('TRAVIS') as boolean } )
 class MovieServiceSpec extends Neo4jSpec {
 
     protected List<Class> getDomainClasses() { [Movie] }
