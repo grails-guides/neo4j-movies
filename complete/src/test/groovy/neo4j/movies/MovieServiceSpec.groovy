@@ -4,6 +4,7 @@ import grails.gorm.transactions.Rollback
 import grails.test.neo4j.Neo4jSpec
 import grails.testing.spock.OnceBefore
 import spock.lang.Shared
+import spock.lang.IgnoreIf
 
 @SuppressWarnings(['MethodName', 'DuplicateNumberLiteral', 'UnnecessaryGetter', 'TrailingWhitespace'])
 @IgnoreIf( { System.getenv('TRAVIS') as boolean } )
