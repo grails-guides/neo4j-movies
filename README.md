@@ -1,7 +1,11 @@
-# Grails Guide - Building a Graph Application with Grails, GORM and Neo4j
+# Building a Graph application with Grails and Neo4j
 
-This example application demonstrates how to build a Graph application with Grails, GORM and Neo4j.
+This repository contains the worked sample app for the [Building a Graph application with Grails and Neo4j](https://grails.apache.org/guides/neo4j-movies/4/guide/index.html) guide on the Apache Grails site.
 
-The completed example source code can be find in the `complete` directory.
+## Run the example
 
-The published guide can be found on the [Grails Guides website](http://guides.grails.org/neo4j-movies/guide/index.html)
+`./gradlew bootRun`
+
+## Maintained at apache/grails-static-website
+
+The guide narrative is maintained at https://github.com/apache/grails-static-website. Changes to the guide content go there; this repo holds the worked sample app only.
